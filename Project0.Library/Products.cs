@@ -4,24 +4,25 @@ using System.Text;
 
 namespace Project0.Library
 {
-    class Products
-
+    public class Products
+        
     {
         public Products(string itemName, double price, string location, int inventory)
         {
-            _itemName = itemName;
-            _price = price;
-            _location = location;
-            _inventory = inventory;
+            ItemName = itemName;
+            Price = price;
+            Location = location;
+            Inventory = inventory;
         }
-
-        public string _itemName
+        
+        public string ItemName
         { get; private set; }
-        public double _price
+        public double Price
         { get; private set; }
-        public string _location
+        public string Location
         { get; private set; }
-        public int _inventory
+        public int Inventory
         { get; private set; }
+        
     }
 }

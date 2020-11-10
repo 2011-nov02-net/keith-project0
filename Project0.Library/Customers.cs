@@ -4,21 +4,32 @@ using System.Text;
 
 namespace Project0.Library
 {
-    class Customers
+    public class Customers
     {
-        public Customers(string name, int id, string phone)
+        //public List<Orders> OrderHistory;
+        public Customers(string name, int id)
         {
-            _customerName = name;
-            _customerId = id;
-            _phone = phone;
+            CustomerName = name;
+            CustomerId = id;
+            //Phone = phone;
+            CustomerId++;
         }
 
-        public string _customerName
+        public string CustomerName
         { get; private set; }
-        public int _customerId
+        public int CustomerId
         { get; private set; }
-        public string _phone
+        public string Phone
         { get; private set; }
+
+        public string ViewCustomer()
+        {
+            string customer = $"Name: {CustomerName} | Id: {CustomerId}";
+
+            return customer;
+        }
+
+        
 
 
 

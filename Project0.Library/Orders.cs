@@ -4,7 +4,22 @@ using System.Text;
 
 namespace Project0.Library
 {
-    class Orders
+    public class Orders
     {
+        
+        public int orderId;
+        public Orders(int orderId, string location)
+        {
+            orderId = orderId;
+            Location = location;
+
+        }
+
+        public string Location
+        { get; set; }
+
+        
+       
+        
     }
 }

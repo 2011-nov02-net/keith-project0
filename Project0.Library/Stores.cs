@@ -5,20 +5,28 @@ namespace Project0.Library
 {
     public class Stores
     {
+        
         public Stores(string name, int id, string location)
         {
-            _storeName = name;
-            _storeId = id;
-            _location = location;
+            StoreName = name;
+            StoreId = id;
+            Location = location;
+            
         }
 
-        public string _storeName
+        public string StoreName
         { get; private set; }
-        public int _storeId
+        public int StoreId
         { get; private set; }
-        public string _location
+        public string Location
         { get; private set; }
-        
+
+        public string ViewStore()
+        {
+            string store = $"Name: {StoreName},\nId: {StoreId},\nLocation: {Location}";
+
+            return store;
+        }
 
     }
 }
