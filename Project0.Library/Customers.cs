@@ -6,13 +6,17 @@ namespace Project0.Library
 {
     public class Customers
     {
-        //public List<Orders> OrderHistory;
-        public Customers(string name, int id)
+        
+        
+        
+
+        private static int id = 1;
+        public Customers(string name)
         {
             CustomerName = name;
             CustomerId = id;
             //Phone = phone;
-            CustomerId++;
+            id++;
         }
 
         public string CustomerName
@@ -25,7 +29,6 @@ namespace Project0.Library
         public string ViewCustomer()
         {
             string customer = $"Name: {CustomerName} | Id: {CustomerId}";
-
             return customer;
         }
 

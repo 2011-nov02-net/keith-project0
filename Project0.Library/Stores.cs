@@ -21,10 +21,13 @@ namespace Project0.Library
         public string Location
         { get; private set; }
 
+        public Products productAvailable()
+        {
+            return new Products("Toy", false, "Nevada");
+        }
         public string ViewStore()
         {
             string store = $"Name: {StoreName},\nId: {StoreId},\nLocation: {Location}";
-
             return store;
         }
 

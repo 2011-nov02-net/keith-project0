@@ -8,15 +8,21 @@ namespace Project0.Library
     {
         
         public int orderId;
+
         public Orders(int orderId, string location)
         {
             orderId = orderId;
             Location = location;
-
         }
 
         public string Location
         { get; set; }
+
+        public void ViewOrder()
+        {
+        }
+
+
 
         
        
